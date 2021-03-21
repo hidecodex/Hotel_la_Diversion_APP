@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+<!--Vista Clientes-->
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Python Flask Bucket List App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="inactive"></li><a href="#">Hola!</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 style="color:azure";>Bienvenido a nuestra App</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Hotel la Diversion</h1>
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href="/templates/rooms.html" role="button">Vea nuestras Habitaciones</a>
+            </p>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; Nueva Aplicacion 2021</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
+
+
+{% endblock %}

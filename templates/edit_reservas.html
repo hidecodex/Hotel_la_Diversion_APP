@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="col-md-4 offset-md-4">
+    <div class="card card-body">
+        <form action="/update/{{reservas.0}}" method="POST">
+
+            <div class="form-group">
+                <input type="text" name="typeRoom" placeholder="typeRoom" value="{{ reservas.1 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="fullname" placeholder="Fullname" value="{{ reservas.2 }}" class="form-control">  
+            </div>
+            <div class="form-group">
+                <input type="varchar" name="phone" placeholder="Phone" value="{{ reservas.3 }}" class="form-control"> 
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="Email" value="{{ reservas.4 }}" class="form-control">  
+            </div>
+            <div class="form-group">
+                <input type="text" name="days" placeholder="Days" value="{{ reservas.5 }}" class="form-control"> 
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                    Save
+                </button>
+            </div>
+        </form>  
+        
+        <footer class="footer">
+            <p>&copy; Editando reservas!</p>
+        </footer>
+    </div>
+        
+</div>
+
+{% endblock %}

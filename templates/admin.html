@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<!--Vista Administradores-->
+
+<div class="row">
+    <div class="col-md-10 offset-md-1">
+        <table class="table table-striped table-bordered bg-white table-sm">
+            <thead>
+                <tr>
+                    <td>TypeRoom</td>
+                    <td>Fullname</td>
+                    <td>Phone</td>
+                    <td>Email</td>
+                    <td>Days</td>
+                    <td>Operation</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for reservas in reserva %}
+                <tr>
+                    <td>{{ reservas.1 }}</td>
+                    <td>{{ reservas.2 }}</td>
+                    <td>{{ reservas.3 }}</td>
+                    <td>{{ reservas.4 }}</td>
+                    <td>{{ reservas.5 }}</td>
+                    <td>
+                        <a href="/editar/{{reservas.0}}" class="btn btn-secondary">Editar</a>
+                        <a href="/delete/{{reservas.0}}" class="btn btn-danger btn-delete">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+        <footer class="footer">
+            <p>&copy; Administrando!</p>
+        </footer>
+    </div>
+
+    
+        
+</div>
+
+
+
+{% endblock %}

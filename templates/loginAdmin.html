@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<!--Vista Administradores-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bienvenido a nuestra App</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      
+ 
+      <div class="jumbotron">
+        <h1>Inicia Sesion</h1>
+        <form class="form-signin">
+        <label for="inputName" class="sr-only">Usuario</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+         
+        <a href="/templates/admin.html"  class="btn btn-lg btn-primary btn-block" type="button">Entrar</a>
+      </form>
+      </div>
+ 
+       
+ 
+      <footer class="footer">
+       
+      </footer>
+      <p>&copy; Inicie sesion para administrar</p>
+    </div>
+  </body>
+</html>
+
+{% endblock %}
